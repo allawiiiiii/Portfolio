@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ali Erbeia — Systemutvecklare</title>
+  <meta name="description" content="Portfolio för Ali Erbeia, systemutvecklare med fokus på fullstack, backend och AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo">&lt;ali /&gt;</a>
+    <button class="nav-toggle" aria-label="Öppna meny" aria-expanded="false">☰</button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#om"><span>01.</span> Om mig</a></li>
+        <li><a href="#projekt"><span>02.</span> Projekt</a></li>
+        <li><a href="#erfarenhet"><span>03.</span> Erfarenhet</a></li>
+        <li><a href="#kontakt"><span>04.</span> Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="mono accent">Hej, jag heter</p>
+      <h1>Ali Erbeia.</h1>
+      <h2 class="muted">Jag bygger <span id="typed" class="accent"></span><span class="cursor">|</span></h2>
+      <p class="lead">
+        Systemutvecklare med yrkeserfarenhet av React och TypeScript och praktisk
+        fullstack-erfarenhet från egna projekt. Jag brinner för problemlösning,
+        backendutveckling och AI.
+      </p>
+      <div class="hero-actions">
+        <a href="#projekt" class="btn btn-primary">Se mina projekt</a>
+        <a href="cv.pdf" class="btn btn-ghost" download>Ladda ner CV</a>
+      </div>
+    </section>
+
+    <!-- OM MIG -->
+    <section id="om" class="section reveal">
+      <h2 class="section-title"><span class="mono accent">01.</span> Om mig</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            Jag är utbildad systemutvecklare med inriktning mot test och jobbar idag
+            deltid som utvecklare på Caiator AB i Helsingborg, där jag bygger frontend
+            i React och TypeScript utifrån Figma-design.
+          </p>
+          <p>
+            På fritiden bygger jag Nexvio, en AI-driven ekonomiplattform, från grunden
+            med Next.js, FastAPI och PostgreSQL. Jag gillar att förstå hela kedjan,
+            från databas och API till gränssnitt.
+          </p>
+          <p>Tekniker jag jobbar med:</p>
+          <ul class="skills mono">
+            <li>Python</li>
+            <li>TypeScript / JavaScript</li>
+            <li>React &amp; Next.js</li>
+            <li>FastAPI</li>
+            <li>Java</li>
+            <li>PostgreSQL &amp; SQL</li>
+            <li>Docker</li>
+            <li>OpenAI API</li>
+            <li>Git &amp; GitHub</li>
+            <li>Enhets-, integrations- &amp; E2E-test</li>
+          </ul>
+          <p class="languages">
+            Språk: svenska, engelska och arabiska flytande, franska grundläggande.
+          </p>
+        </div>
+        <div class="avatar">
+          <!-- Byt ut mot en egen bild: <img src="profil.jpg" alt="Ali Erbeia"> -->
+          <div class="avatar-placeholder mono">AE</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJEKT -->
+    <section id="projekt" class="section reveal">
+      <h2 class="section-title"><span class="mono accent">02.</span> Projekt</h2>
+      <!-- Projekten renderas från listan i script.js -->
+      <div class="projects" id="projects"></div>
+    </section>
+
+    <!-- ERFARENHET -->
+    <section id="erfarenhet" class="section reveal">
+      <h2 class="section-title"><span class="mono accent">03.</span> Erfarenhet</h2>
+      <ol class="timeline">
+        <li>
+          <p class="mono muted">Sep. 2025 — nu</p>
+          <h3>Systemutvecklare, deltid <span class="accent">@ Caiator AB</span></h3>
+          <ul class="bullets">
+            <li>Utvecklar frontend i React och TypeScript, både i befintlig kod och i nya komponenter.</li>
+            <li>Förnyade en kundriktad demoprodukt och byggde en enkät i nio steg utifrån Figma-design, tillsammans med en UI/UX-designer.</li>
+            <li>Bidrog till ett AI-initiativ genom att implementera en AI-agent i Microsoft Teams.</li>
+            <li>Jobbar med Git/GitHub, branches och kodgranskade pull requests.</li>
+          </ul>
+        </li>
+        <li>
+          <p class="mono muted">Aug. 2024 — maj 2026</p>
+          <h3>Systemutvecklare, inriktning test <span class="accent">@ Jensen Yrkeshögskola</span></h3>
+          <p>Yrkeshögskoleexamen i Malmö, med två LIA-perioder på 12 veckor vardera.</p>
+        </li>
+        <li>
+          <p class="mono muted">2021 — 2024</p>
+          <h3>Civilingenjör, intelligenta system <span class="accent">@ Högskolan i Halmstad</span></h3>
+          <p>Civilingenjörsprogrammet i intelligenta system (ej avslutat).</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section contact reveal">
+      <p class="mono accent">04. Vad händer nu?</p>
+      <h2>Hör av dig</h2>
+      <p class="lead">
+        Har du ett jobb, ett projekt eller bara vill säga hej? Min inkorg är alltid öppen.
+      </p>
+      <a href="mailto:ali.imad36@hotmail.com" class="btn btn-primary">Säg hej</a>
+      <ul class="socials mono">
+        <li><a href="https://github.com/allawiiiiii" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ali-erbeia-7a1a47275" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer mono muted">
+    <p>Byggd av Ali Erbeia · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
