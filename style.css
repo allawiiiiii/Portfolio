@@ -60,7 +60,21 @@ ul { list-style: none; }
 
 .nav-links { display: flex; gap: 2rem; }
 .nav-links a { font-size: 0.9rem; transition: color 0.2s; }
-.nav-links a span { font-family: var(--mono); color: var(--accent); font-size: 0.8rem; }
+.nav-links .num { font-family: var(--mono); color: var(--accent); font-size: 0.8rem; }
+
+.nav-right { display: flex; align-items: center; gap: 1.5rem; }
+
+.lang-toggle {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background 0.2s;
+}
+.lang-toggle:hover { background: var(--accent-soft); }
 .nav-links a:hover { color: var(--accent); }
 
 .nav-toggle {
@@ -250,6 +264,7 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 clamp(1rem, 5vw, 2rem);
   }
   .nav.open nav { transform: none; }
   .nav-toggle { position: relative; z-index: 11; }
+  .nav-right { gap: 1rem; }
   .nav-links { flex-direction: column; text-align: center; gap: 2rem; font-size: 1.1rem; }
 
   .about-grid { grid-template-columns: 1fr; }

@@ -13,50 +13,53 @@
 <body>
   <header class="nav">
     <a href="#top" class="logo">&lt;ali /&gt;</a>
-    <button class="nav-toggle" aria-label="Öppna meny" aria-expanded="false">☰</button>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#om"><span>01.</span> Om mig</a></li>
-        <li><a href="#projekt"><span>02.</span> Projekt</a></li>
-        <li><a href="#erfarenhet"><span>03.</span> Erfarenhet</a></li>
-        <li><a href="#kontakt"><span>04.</span> Kontakt</a></li>
-      </ul>
-    </nav>
+    <div class="nav-right">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#om"><span class="num">01.</span> <span data-i18n="nav.about">Om mig</span></a></li>
+          <li><a href="#projekt"><span class="num">02.</span> <span data-i18n="nav.projects">Projekt</span></a></li>
+          <li><a href="#erfarenhet"><span class="num">03.</span> <span data-i18n="nav.experience">Erfarenhet</span></a></li>
+          <li><a href="#kontakt"><span class="num">04.</span> <span data-i18n="nav.contact">Kontakt</span></a></li>
+        </ul>
+      </nav>
+      <button class="lang-toggle mono" aria-label="Switch to English">EN</button>
+      <button class="nav-toggle" aria-label="Öppna meny" aria-expanded="false">☰</button>
+    </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <p class="mono accent">Hej, jag heter</p>
+      <p class="mono accent" data-i18n="hero.hi">Hej, jag heter</p>
       <h1>Ali Erbeia.</h1>
-      <h2 class="muted">Jag bygger <span id="typed" class="accent"></span><span class="cursor">|</span></h2>
-      <p class="lead">
+      <h2 class="muted"><span data-i18n="hero.build">Jag bygger</span> <span id="typed" class="accent"></span><span class="cursor">|</span></h2>
+      <p class="lead" data-i18n="hero.lead">
         Systemutvecklare med yrkeserfarenhet av React och TypeScript och praktisk
         fullstack-erfarenhet från egna projekt. Jag brinner för problemlösning,
         backendutveckling och AI.
       </p>
       <div class="hero-actions">
-        <a href="#projekt" class="btn btn-primary">Se mina projekt</a>
-        <a href="cv.pdf" class="btn btn-ghost" download>Ladda ner CV</a>
+        <a href="#projekt" class="btn btn-primary" data-i18n="hero.cta">Se mina projekt</a>
+        <a href="cv.pdf" class="btn btn-ghost" download data-i18n="hero.cv">Ladda ner CV</a>
       </div>
     </section>
 
     <!-- OM MIG -->
     <section id="om" class="section reveal">
-      <h2 class="section-title"><span class="mono accent">01.</span> Om mig</h2>
+      <h2 class="section-title"><span class="mono accent">01.</span> <span data-i18n="nav.about">Om mig</span></h2>
       <div class="about-grid">
         <div>
-          <p>
+          <p data-i18n="about.p1">
             Jag är utbildad systemutvecklare med inriktning mot test och jobbar idag
             deltid som utvecklare på Caiator AB i Helsingborg, där jag bygger frontend
             i React och TypeScript utifrån Figma-design.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             På fritiden bygger jag Nexvio, en AI-driven ekonomiplattform, från grunden
             med Next.js, FastAPI och PostgreSQL. Jag gillar att förstå hela kedjan,
             från databas och API till gränssnitt.
           </p>
-          <p>Tekniker jag jobbar med:</p>
+          <p data-i18n="about.tech">Tekniker jag jobbar med:</p>
           <ul class="skills mono">
             <li>Python</li>
             <li>TypeScript / JavaScript</li>
@@ -67,9 +70,9 @@
             <li>Docker</li>
             <li>OpenAI API</li>
             <li>Git &amp; GitHub</li>
-            <li>Enhets-, integrations- &amp; E2E-test</li>
+            <li data-i18n="about.testing">Enhets-, integrations- &amp; E2E-test</li>
           </ul>
-          <p class="languages">
+          <p class="languages" data-i18n="about.languages">
             Språk: svenska, engelska och arabiska flytande, franska grundläggande.
           </p>
         </div>
@@ -82,19 +85,19 @@
 
     <!-- PROJEKT -->
     <section id="projekt" class="section reveal">
-      <h2 class="section-title"><span class="mono accent">02.</span> Projekt</h2>
+      <h2 class="section-title"><span class="mono accent">02.</span> <span data-i18n="nav.projects">Projekt</span></h2>
       <!-- Projekten renderas från listan i script.js -->
       <div class="projects" id="projects"></div>
     </section>
 
     <!-- ERFARENHET -->
     <section id="erfarenhet" class="section reveal">
-      <h2 class="section-title"><span class="mono accent">03.</span> Erfarenhet</h2>
+      <h2 class="section-title"><span class="mono accent">03.</span> <span data-i18n="nav.experience">Erfarenhet</span></h2>
       <ol class="timeline">
         <li>
-          <p class="mono muted">Sep. 2025 — nu</p>
-          <h3>Systemutvecklare, deltid <span class="accent">@ Caiator AB</span></h3>
-          <ul class="bullets">
+          <p class="mono muted" data-i18n="exp.caiator.date">Sep. 2025 — nu</p>
+          <h3 data-i18n="exp.caiator.role">Systemutvecklare, deltid <span class="accent">@ Caiator AB</span></h3>
+          <ul class="bullets" data-i18n="exp.caiator.bullets">
             <li>Utvecklar frontend i React och TypeScript, både i befintlig kod och i nya komponenter.</li>
             <li>Förnyade en kundriktad demoprodukt och byggde en enkät i nio steg utifrån Figma-design, tillsammans med en UI/UX-designer.</li>
             <li>Bidrog till ett AI-initiativ genom att implementera en AI-agent i Microsoft Teams.</li>
@@ -102,26 +105,26 @@
           </ul>
         </li>
         <li>
-          <p class="mono muted">Aug. 2024 — maj 2026</p>
-          <h3>Systemutvecklare, inriktning test <span class="accent">@ Jensen Yrkeshögskola</span></h3>
-          <p>Yrkeshögskoleexamen i Malmö, med två LIA-perioder på 12 veckor vardera.</p>
+          <p class="mono muted" data-i18n="exp.jensen.date">Aug. 2024 — maj 2026</p>
+          <h3 data-i18n="exp.jensen.role">Systemutvecklare, inriktning test <span class="accent">@ Jensen Yrkeshögskola</span></h3>
+          <p data-i18n="exp.jensen.text">Yrkeshögskoleexamen i Malmö, med två LIA-perioder på 12 veckor vardera.</p>
         </li>
         <li>
           <p class="mono muted">2021 — 2024</p>
-          <h3>Civilingenjör, intelligenta system <span class="accent">@ Högskolan i Halmstad</span></h3>
-          <p>Civilingenjörsprogrammet i intelligenta system (ej avslutat).</p>
+          <h3 data-i18n="exp.halmstad.role">Civilingenjör, intelligenta system <span class="accent">@ Högskolan i Halmstad</span></h3>
+          <p data-i18n="exp.halmstad.text">Civilingenjörsprogrammet i intelligenta system (ej avslutat).</p>
         </li>
       </ol>
     </section>
 
     <!-- KONTAKT -->
     <section id="kontakt" class="section contact reveal">
-      <p class="mono accent">04. Vad händer nu?</p>
-      <h2>Hör av dig</h2>
-      <p class="lead">
+      <p class="mono accent" data-i18n="contact.kicker">04. Vad händer nu?</p>
+      <h2 data-i18n="contact.title">Hör av dig</h2>
+      <p class="lead" data-i18n="contact.lead">
         Har du ett jobb, ett projekt eller bara vill säga hej? Min inkorg är alltid öppen.
       </p>
-      <a href="mailto:ali.imad36@hotmail.com" class="btn btn-primary">Säg hej</a>
+      <a href="mailto:ali.imad36@hotmail.com" class="btn btn-primary" data-i18n="contact.cta">Säg hej</a>
       <ul class="socials mono">
         <li><a href="https://github.com/allawiiiiii" target="_blank" rel="noopener">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/ali-erbeia-7a1a47275" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -130,7 +133,7 @@
   </main>
 
   <footer class="footer mono muted">
-    <p>Byggd av Ali Erbeia · <span id="year"></span></p>
+    <p><span data-i18n="footer.built">Byggd av Ali Erbeia</span> · <span id="year"></span></p>
   </footer>
 
   <script src="script.js"></script>
